@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Google Sans';
   src: local('Google Sans Regular'), local('Google-Sans-Regular'),
-    url('../public/font/GoogleSans-Regular.woff2') format('woff2'),
-    url('../public/font/GoogleSans-Regular.woff') format('woff'),
-    url('../public/font/GoogleSans-Regular.ttf') format('truetype');
+    url('../font/GoogleSans-Regular.woff2') format('woff2'),
+    url('../font/GoogleSans-Regular.woff') format('woff'),
+    url('../font/GoogleSans-Regular.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -46,7 +46,7 @@ span {
   color: white;
 }
 
-.header-nav {
+.nav {
   display: flex;
   justify-content: flex-end;
 
@@ -162,13 +162,15 @@ span {
     background: none;
     border: none;
     outline: none;
+    padding-right: 13px;
   }
 
   &__search-input {
+    font-family: arial, sans-serif;
     resize: none;
     border: none;
     line-height: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     overflow-x: hidden;
     font-size: 16px;
     flex: 100%;
@@ -178,8 +180,23 @@ span {
   &__btn-group {
     display: flex;
     align-items: center;
-    gap: 16px;
     margin: 8px;
     outline: none;
   }
+}
+
+.btn {
+  padding: 0 8px;
+  
+  &__clear {
+    display: flex;
+  }
+}
+
+.right-border {
+  border-right: 1px solid #dadce0;
+}
+
+.hidden {
+  display: none;
 }

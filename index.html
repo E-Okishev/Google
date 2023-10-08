@@ -10,13 +10,13 @@
 
 <body>
   <header>
-    <nav class="header-nav">
-      <ul class="header-nav__items">
-        <li><a class="header-nav__link link" aria-label="Почта" href="#">Почта</a></li>
-        <li><a class="header-nav__link link" aria-label="Картинки" href="#">Картинки</a></li>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li><a class="nav__link link" aria-label="Почта" href="#">Почта</a></li>
+        <li><a class="nav__link link" aria-label="Картинки" href="#">Картинки</a></li>
         <li>
           <div class="apps"><a aria-label="Приложения Google" href="#">
-              <img class="apps__btn" src="./public/img/svg/apps.svg" alt="Google apps">
+              <img class="apps__btn" src="./img/svg/apps.svg" alt="Google apps">
             </a></div>
         </li>
         <li><a class="login-btn" aria-label="Войти в аккаунт Google" href="#">Войти</a></li>
@@ -25,31 +25,45 @@
   </header>
   <section>
     <div class="logotype">
-      <img src="./public/img/google-logo.svg" alt="Google Logo">
+      <img src="./img/google-logo.svg" alt="Google Logo">
     </div>
     <div class="search-form">
       <div class="input">
         <div class="input__search-btn"><button class="input__btn">
-          <img class="input__img" src="./public/img/svg/search-btn.svg" alt="search">
-        </button></div>
+            <img class="input__img" src="./img/svg/search-btn.svg" alt="search">
+          </button></div>
         <input class="input__search-input" type="text" title="Поиск" autocorrect="off" autofocus aria-label="Найти">
         <div class="input__btn-group">
-          <div class="btn__keyboard"><button class="input__btn">
-            <img class="input__img" src="./public/img/svg/tia.png" alt="keyboard">
-          </button></div>
-          <div class="btn__voice"><button aria-label="Голосовой поиск" class="input__btn">
-            <img class="input__img" src="./public/img/svg/voice.svg" alt="microphone">
-          </button></div>
-          <div class="btn__photo"><button class="input__btn">
-            <img class="input__img" src="./public/img/svg/photo.svg" alt="photo">
-          </button></div>
+          <div class="btn__clear hidden">
+            <button class="btn input__btn">
+              <img class="input__img" src="./img/svg/plus.svg" alt="clear">
+            </button>
+            <span class="right-border"></span>
+          </div>
+          <div class="btn__keyboard">
+            <button class="btn input__btn">
+              <img class="input__img" src="./img/svg/tia.png" alt="keyboard">
+            </button>
+          </div>
+          <div class="btn__voice">
+            <button class="btn input__btn">
+              <img class="input__img" src="./img/svg/voice.svg" alt="microphone">
+            </button>
+          </div>
+          <div class="btn__photo">
+            <button class="btn input__btn">
+              <img class="input__img" src="./img/svg/photo.svg" alt="photo">
+            </button>
+          </div>
         </div>
       </div>
-      <div class="btn-group">
-
-      </div>
+  </section>
+  <section>
+    <div class="btn-group">
 
     </div>
+  </section>
+  <section>
     <div class="empty"></div>
   </section>
 
