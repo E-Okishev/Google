@@ -6,57 +6,35 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Google</title>
+  <link rel="icon" type="image/x-icon" href="./public/img/svg/faviconV2.png">
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <ul class="nav__items">
-        <li><a class="nav__link link" aria-label="Почта" href="#">Почта</a></li>
-        <li><a class="nav__link link" aria-label="Картинки" href="#">Картинки</a></li>
-        <li>
-          <div class="apps"><a aria-label="Приложения Google" href="#">
-              <img class="apps__btn" src="./img/svg/apps.svg" alt="Google apps">
-            </a></div>
-        </li>
-        <li><a class="login-btn" aria-label="Войти в аккаунт Google" href="#">Войти</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header></header>
   <section>
     <div class="logotype">
       <img src="./img/google-logo.svg" alt="Google Logo">
     </div>
+
     <div class="search-form">
-      <div class="input">
-        <div class="input__search-btn"><button class="input__btn">
-            <img class="input__img" src="./img/svg/search-btn.svg" alt="search">
-          </button></div>
-        <input class="input__search-input" type="text" title="Поиск" autocorrect="off" autofocus aria-label="Найти">
-        <div class="input__btn-group">
-          <div class="btn__clear hidden">
-            <button class="btn input__btn">
-              <img class="input__img" src="./img/svg/plus.svg" alt="clear">
-            </button>
-            <span class="right-border"></span>
-          </div>
-          <div class="btn__keyboard">
-            <button class="btn input__btn">
-              <img class="input__img" src="./img/svg/tia.png" alt="keyboard">
-            </button>
-          </div>
-          <div class="btn__voice">
-            <button class="btn input__btn">
-              <img class="input__img" src="./img/svg/voice.svg" alt="microphone">
-            </button>
-          </div>
-          <div class="btn__photo">
-            <button class="btn input__btn">
-              <img class="input__img" src="./img/svg/photo.svg" alt="photo">
-            </button>
-          </div>
+      <form action="" method="post">
+        <div class="search-input">
+          <button class="btn search-btn" type="submit"></button>
+          <input class="input" type="text" name="name" id="name" required title="Поиск" autocorrect="off" autofocus
+            aria-label="Найти">
+            <div class="btn-group">
+              <div class="clear-btn">
+                <span class="btn clear-input"></span>
+                <span class="border-right"></span>
+              </div>
+              <span class="btn keyboard"></span>
+              <span class="btn microphone"></span>
+              <span class="btn photo"></span>
+            </div>
         </div>
-      </div>
+      </form>
+
+    </div>
   </section>
   <section>
     <div class="btn-group">

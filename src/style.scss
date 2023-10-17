@@ -132,20 +132,44 @@ span {
   padding: 20px;
 }
 
-.input {
+form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 44px;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 584px;
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 24px;
+  height: 44px;
+  margin: 0 8px;
+}
+
+.search-btn {
+  background-image: url(../public/img/svg/search-btn.svg);
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 14px;
+}
+
+.input {
+  height: 48px;
+  width: 100%;
   background: #fff;
   border: 1px solid #dfe1e5;
-  box-shadow: none;
   border-radius: 24px;
-  margin: 0 auto;
-  width: auto;
-  max-width: 584px;
-  padding: 5px 8px 0 14px;
-  outline: none;
+  padding-left: 47px;
+  padding-right: 183px;
+  box-sizing: border-box;
 
   &:hover {
     background-color: #fff;
@@ -153,50 +177,44 @@ span {
     border-color: rgba(223, 225, 229, 0);
   }
 
-  &__img {
-    cursor: pointer;
-  }
-
-  &__btn {
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
-    padding-right: 13px;
-  }
-
-  &__search-input {
-    font-family: arial, sans-serif;
-    resize: none;
-    border: none;
-    line-height: 22px;
-    margin-bottom: 6px;
-    overflow-x: hidden;
-    font-size: 16px;
-    flex: 100%;
-    outline: none;
-  }
-
-  &__btn-group {
-    display: flex;
-    align-items: center;
-    margin: 8px;
+  &:focus-visible {
     outline: none;
   }
 }
 
-.btn {
-  padding: 0 8px;
-  
-  &__clear {
-    display: flex;
-  }
+.btn-group {
+  position: absolute;
+  display: flex;
+  top: calc(50% - 22px);
+  right: 0;
+  margin-right: 8px;
 }
 
-.right-border {
+.clear-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.clear-input {
+  background-image: url(../public/img/svg/plus.svg);
+  margin: 0 12px;
+}
+
+.keyboard {
+  background-image: url(../public/img/svg/tia.png);
+}
+
+.microphone {
+  background-image: url(../public/img/svg/voice.svg);
+}
+
+.photo {
+  background-image: url(../public/img/svg/photo.svg);
+}
+
+.border-right {
   border-right: 1px solid #dadce0;
-}
-
-.hidden {
-  display: none;
+  display: block;
+  height: 65%;
 }
