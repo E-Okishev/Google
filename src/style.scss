@@ -155,7 +155,7 @@ form {
 }
 
 .search-btn {
-  background-image: url(../public/img/svg/search-btn.svg);
+  background-image: url(../img/svg/search-btn.svg);
   position: absolute;
   top: calc(50% - 10px);
   left: 14px;
@@ -197,24 +197,28 @@ form {
 }
 
 .clear-input {
-  background-image: url(../public/img/svg/plus.svg);
+  background-image: url(../img/svg/plus.svg);
   margin: 0 12px;
 }
 
 .keyboard {
-  background-image: url(../public/img/svg/tia.png);
+  background-image: url(../img/svg/tia.png);
 }
 
 .microphone {
-  background-image: url(../public/img/svg/voice.svg);
+  background-image: url(../img/svg/voice.svg);
 }
 
 .photo {
-  background-image: url(../public/img/svg/photo.svg);
+  background-image: url(../img/svg/photo.svg);
 }
 
 .border-right {
   border-right: 1px solid #dadce0;
   display: block;
   height: 65%;
+}
+
+.display-none {
+  display: none;
 }
