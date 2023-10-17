@@ -2,7 +2,7 @@ import "../src/style.scss"
 import "./modules/headerHTML"
 
 const input = document.querySelector('.input');
-const searchBtn = document.querySelector('.search-btn');
+const submitBtn = document.querySelector('.submit-btn');
 const clearBtn = document.querySelector('.clear-btn');
 
 clearBtn.addEventListener('click', () => {
@@ -10,15 +10,15 @@ clearBtn.addEventListener('click', () => {
   hiddenElem(clearBtn)
 })
 
-searchBtn.addEventListener('click', (evt) => {
+submitBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
-
-  window.open('https://google.com/', '_blank')
+  if (input.value) {
+    window.open(`https://google.com/search?q=${input.value}`, '_blank')
+  }
 })
 
 input.addEventListener('input', (evt) => {
-  let showClearBtn = evt.target.value ? showElem(clearBtn) : hiddenElem(clearBtn);
-  return showClearBtn;
+  return evt.target.value ? showElem(clearBtn) : hiddenElem(clearBtn);
 })
 
 function hiddenElem(elem) {

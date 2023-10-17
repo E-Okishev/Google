@@ -14,7 +14,6 @@
 }
 
 body,
-input,
 button {
   font-size: 14px;
   font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
@@ -28,11 +27,9 @@ body {
   display: block;
 }
 
-div {
-  display: block;
-}
-
 a {
+  font-family: arial, sans-serif;
+  font-size: 13px;
   color: rgba(0, 0, 0, .87);
   text-decoration: none;
 }
@@ -157,8 +154,9 @@ form {
 .search-btn {
   background-image: url(../img/svg/search-btn.svg);
   position: absolute;
-  top: calc(50% - 10px);
-  left: 14px;
+  top: calc(50% - 22px);
+  left: 6px;
+  cursor: default;
 }
 
 .input {
@@ -170,6 +168,9 @@ form {
   padding-left: 47px;
   padding-right: 183px;
   box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: #202124;
 
   &:hover {
     background-color: #fff;
@@ -191,6 +192,7 @@ form {
 }
 
 .clear-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin-right: 4px;
