@@ -1,7 +1,4 @@
 import "../src/style.scss"
-import "./modules/headerHTML"
-import "./modules/logoHTML"
-import "./modules/searchHTML"
 
 const input = document.querySelector('.input');
 const submitBtn = document.querySelector('.submit-btn');
