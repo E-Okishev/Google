@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Google</title>
-  <link rel="icon" type="image/x-icon" href="./img/svg/faviconV2.png">
+  <link rel="icon" type="image/x-icon" href="./img/icon/faviconV2.png">
 </head>
 
 <body>
@@ -17,21 +17,19 @@
         <li><a class="nav__link link" aria-label="Картинки" href="#">Картинки</a></li>
         <li>
           <div class="apps"><a aria-label="Приложения Google" href="#">
-              <img class="apps__btn" src="./img/svg/apps.svg" alt="Google apps">
+              <img class="apps__btn" src="./img/icon/apps.svg" alt="Google apps">
             </a></div>
         </li>
-        <li><a class="login-btn" aria-label="Войти в аккаунт Google" href="#">Войти</a></li>
+        <li><a class="login-btn" aria-label="Войти в аккаунт Google" href="https://accounts.google.com/" target='_blank'>Войти</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="logo-section">
+  <section class="main">
     <div class="logotype">
       <img src="./img/google-logo.svg" alt="Google Logo">
     </div>
-  </section>
 
-  <section class="search-section">
     <div class="search-form">
       <form action="" method="post" id="search">
         <div class="search-input">
@@ -49,21 +47,40 @@
           </div>
         </div>
       </form>
-  </section>
-
-  <section>
-    <div class="button-group">
-      <button class="button-group__btn submit-btn" aria-label="Поиск в Google" type="submit" form="search">Поиск в
-        Google</button>
-      <button class="button-group__btn doodle-btn" aria-label="Мне повезет!">Мне повезет!</button>
+      <div class="button-group">
+        <button class="button-group__btn submit-btn" aria-label="Поиск в Google" type="submit" form="search">Поиск в
+          Google</button>
+        <button class="button-group__btn doodle-btn" aria-label="Мне повезет!">Мне повезет!</button>
+      </div>
     </div>
-  </section>
 
-  <section>
     <div class="empty"></div>
   </section>
 
+  <section class="footer">
+    <div class="footer__country">Россия</div>
+    <div class="footer__links">
+      <div class="footer__nav_block item-one">
+        <a class="link-climat footer-link" href="https://sustainability.google/intl/ru/carbon-free/" target="_blank">
+          <img src="./public/img/icon/climat.png" alt="leaf">
+          Наше третье десятилетие борьбы с изменением климата
+        </a>
+      </div>
+      <div class="footer__nav_block item-two">
+        <a class="footer-link" href="https://about.google/" target="_blank">Всё о Google</a>
+        <a class="footer-link" href="https://www.google.com/intl/ru_ru/ads/" target="_blank">Реклама</a>
+        <a class="footer-link" href="https://www.google.com/services/" target="_blank">Для бизнеса</a>
+        <a class="footer-link" href="https://google.com/search/howsearchworks/" target="_blank">Как работает Google
+          Поиск</a>
+      </div>
+      <div class="footer__nav_block  item-three">
+        <a class="footer-link" href="https://policies.google.com/privacy" target="_blank">Конфиденциальность</a>
+        <a class="footer-link" href="https://policies.google.com/terms" target="_blank">Условия</a>
+        <button class="footer-link">Настройки</button>
+      </div>
+    </div>
 
+  </section>
 
   <script type="module" src="./src/main.js" defer></script>
 </body>

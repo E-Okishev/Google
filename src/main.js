@@ -4,8 +4,9 @@ const input = document.querySelector('.input');
 const submitBtn = document.querySelector('.submit-btn');
 const clearBtn = document.querySelector('.clear-btn');
 const doodle = document.querySelector('.doodle-btn');
+const main = document.querySelector('.main')
 
-window.addEventListener('click', (evt) => {
+main.addEventListener('click', (evt) => {
   evt.preventDefault();
   if (evt.target === doodle) {
     window.open(`https://www.google.com/doodles`, '_blank')
