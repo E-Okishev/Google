@@ -13,7 +13,7 @@
   <header>
     <nav class="nav">
       <ul class="nav__items">
-        <li><a class="nav__link link" aria-label="Почта" href="#">Почта</a></li>
+        <li><a class="nav__link link" aria-label="Почта" href="https://www.google.com/intl/ru/gmail/about/" target='_blank'>Почта</a></li>
         <li><a class="nav__link link" aria-label="Картинки" href="#">Картинки</a></li>
         <li>
           <div class="apps"><a aria-label="Приложения Google" href="#">
@@ -37,7 +37,7 @@
           <input class="input" type="text" name="name" id="name" required title="Поиск" autocorrect="off" autofocus
             aria-label="Найти">
           <div class="btn-group">
-            <div class="clear-btn display-none" title="Очистить">
+            <div class="clear-btn" title="Очистить">
               <span class="btn clear-input"></span>
               <span class="border-right"></span>
             </div>
@@ -62,7 +62,7 @@
     <div class="footer__links">
       <div class="footer__nav_block item-one">
         <a class="link-climat footer-link" href="https://sustainability.google/intl/ru/carbon-free/" target="_blank">
-          <img src="./public/img/icon/climat.png" alt="leaf">
+          <img src="./img/icon/climat.png" alt="leaf">
           Наше третье десятилетие борьбы с изменением климата
         </a>
       </div>
@@ -76,10 +76,18 @@
       <div class="footer__nav_block  item-three">
         <a class="footer-link" href="https://policies.google.com/privacy" target="_blank">Конфиденциальность</a>
         <a class="footer-link" href="https://policies.google.com/terms" target="_blank">Условия</a>
-        <button class="footer-link">Настройки</button>
+        <button class="footer-link setting-btn">Настройки</button>
+          <div class="setting display-none">
+            <div class="setting__item">
+              <div class="toggle-theme">
+                <p class="toggle-theme__text"></p>
+                <span class="toggle-theme__icon"></span>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
-
+    
   </section>
 
   <script type="module" src="./src/main.js" defer></script>

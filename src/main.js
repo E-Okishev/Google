@@ -1,4 +1,6 @@
 import "../src/style.scss"
+import "./darkMode.js"
+import { hiddenElem, showElem } from "./utils.js"
 
 const input = document.querySelector('.input');
 const submitBtn = document.querySelector('.submit-btn');
@@ -23,11 +25,3 @@ main.addEventListener('click', (evt) => {
 input.addEventListener('input', (evt) => {
   return evt.target.value ? showElem(clearBtn) : hiddenElem(clearBtn);
 })
-
-function hiddenElem(elem) {
-  elem.classList.add('display-none');
-}
-
-function showElem(elem) {
-  elem.classList.remove('display-none')
-}
