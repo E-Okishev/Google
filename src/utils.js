@@ -15,3 +15,11 @@ export function toggleText(elem) {
     text.textContent = 'Тёмная тема: откл.';
   }
 }
+
+export function handleChange(elem){
+  if (elem.hasAttribute('dark')){
+    elem.removeAttribute('dark')
+  } else {
+    elem.setAttribute('dark', '');
+  }
+}

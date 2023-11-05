@@ -1,5 +1,6 @@
-import { hiddenElem, showElem, toggleText } from "./utils.js"
+import { hiddenElem, showElem, toggleText, handleChange } from "./utils.js"
 
+const body = document.querySelector('body')
 const toggleTheme = document.querySelector('.toggle-theme');
 const icon = document.querySelector('.toggle-theme__icon');
 const settingMenu = document.querySelector('.setting');
@@ -19,6 +20,7 @@ toggleTheme.addEventListener('click', () => {
   icon.classList.toggle('dark')
   toggleText(icon)
   hiddenElem(settingMenu);
+  handleChange(body)
 })
 
 settingBtn.addEventListener('click', () => {
