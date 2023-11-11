@@ -13,6 +13,11 @@
   --var-footer-border: #dadce0;
   --var-input-hover: #fff;
   --var-input-hover-shadow: rgb(32 33 36 / 28%);
+  --var-input-border-color: #dfe1e5;
+  --var-searchBtn-color: #f8f9fa;
+  --var-searchBtn-color-border: #dadce0;
+  --var-searchBtn-color-shadov: rgb(0 0 0 / 10%);
+  --var-searchBtn-focus: #4285f4;
 }
 
 [dark] {
@@ -29,6 +34,12 @@
   --var-footer-border: #3c4043;
   --var-input-hover: #303134;
   --var-input-hover-shadow: #171717;
+  --var-input-border-color: #5f6368;
+  --var-btn-fc: #e8eaed;
+  --var-searchBtn-color: #303134;
+  --var-searchBtn-color-border: #5f6368;
+  --var-searchBtn-color-shadov: rgb(23 23 23 / 24%);
+  --var-searchBtn-focus: #5f6368;
 }
 
 @font-face {
@@ -198,7 +209,7 @@ form {
   height: 48px;
   width: 100%;
   background: var(--var-body-bg);
-  border: 1px solid #dfe1e5;
+  border: 1px solid var(--var-input-border-color);
   border-radius: 24px;
   padding-left: 47px;
   padding-right: 183px;
@@ -267,8 +278,8 @@ form {
   padding-top: 18px;
 
   &__btn {
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
+    background-color: var(--var-searchBtn-color);
+    border: 1px solid var(--var-searchBtn-color);
     border-radius: 4px;
     color: var(--var-btn-fc);
     font-family: arial, sans-serif;
@@ -281,14 +292,14 @@ form {
     user-select: none;
 
     &:hover {
-      box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-      background-color: #f8f9fa;
-      border: 1px solid #dadce0;
+      box-shadow: 0 1px 1px var(--var-searchBtn-color-shadov);
+      background-color: var(--var-searchBtn-color);
+      border: 1px solid var(--var-searchBtn-color-border);
       color: var(--var-body-fc);
     }
 
     &:focus {
-      border: 1px solid #4285f4;
+      border: 1px solid var(--var-searchBtn-focus);
       outline: none;
     }
   }
