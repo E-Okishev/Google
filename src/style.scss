@@ -160,19 +160,14 @@ span {
   background-repeat: no-repeat;
   background-size: 279px;
   background-position: bottom center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
   box-sizing: border-box;
-  max-height: 290px;
-  height: calc(100% - 560px);
   flex-shrink: 0;
   flex-grow: 1;
 }
 
 .search-form {
   padding-top: 20px;
+  flex-grow: 1;
 }
 
 form {
@@ -262,7 +257,7 @@ form {
 }
 
 .border-right {
-  border-right: 1px solid #dadce0;
+  border-right: 1px solid var(--var-searchBtn-color-border);
   display: block;
   height: 65%;
 }
@@ -303,12 +298,6 @@ form {
       outline: none;
     }
   }
-}
-
-.empty {
-  flex-shrink: 0;
-  flex-grow: 1;
-  box-sizing: border-box;
 }
 
 .footer {

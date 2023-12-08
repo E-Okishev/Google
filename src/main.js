@@ -8,6 +8,8 @@ const clearBtn = document.querySelector('.clear-btn');
 const doodle = document.querySelector('.doodle-btn');
 const main = document.querySelector('.main')
 
+hiddenElem(clearBtn)
+
 main.addEventListener('click', (evt) => {
   evt.preventDefault();
   if (evt.target === doodle) {
